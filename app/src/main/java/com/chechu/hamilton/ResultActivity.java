@@ -5,17 +5,14 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
 import java.util.ArrayList;
 import Jama.Matrix;
 
@@ -56,8 +53,8 @@ public class ResultActivity extends AppCompatActivity {
         tabLayout = findViewById(R.id.activity_result_tablayout);
 
         //ad banner
-        MobileAds.initialize(getApplicationContext(), "ca-app-pub-2850448736568170~8639461090");
-        ((AdView) findViewById(R.id.adView)).loadAd(new AdRequest.Builder().build());
+        //MobileAds.initialize(getApplicationContext(), "ca-app-pub-2850448736568170~8639461090");
+        //((AdView) findViewById(R.id.adView)).loadAd(new AdRequest.Builder().build());
 
         //do operations
         try {

@@ -10,7 +10,7 @@
     tools:showIn="@layout/activity_matrix">
 
     <!-- viewpager where matrix are stored -->
-    <android.support.v4.view.ViewPager
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/matrix_viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

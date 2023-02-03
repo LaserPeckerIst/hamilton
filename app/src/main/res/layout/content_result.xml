@@ -10,19 +10,18 @@
     tools:context="com.chechu.hamilton.ResultActivity"
     tools:showIn="@layout/activity_result">
 
-    <android.support.v4.view.ViewPager
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/activity_result_viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/adView"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
-    <com.google.android.gms.ads.AdView
+<!--    <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         ads:adSize="BANNER"
         android:layout_alignParentBottom="true"
-        ads:adUnitId="ca-app-pub-2850448736568170/1897000911"/>
+        ads:adUnitId="ca-app-pub-2850448736568170/1897000911"/>-->
 
 </RelativeLayout>
